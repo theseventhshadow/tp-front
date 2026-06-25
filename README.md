@@ -18,3 +18,6 @@ Al hacer push a `main`:
 ## Acceso
 ```bash
 kubectl get svc tienda-frontend -n tienda
+
+## Intentos de push
+- 1
