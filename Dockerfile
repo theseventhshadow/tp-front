@@ -2,11 +2,11 @@
 FROM nginx:alpine
 
 # Copia la configuración de nginx (con el proxy a /api/)
-COPY default.conf /etc/nginx/conf.d/default.conf
+COPY src/default.conf /etc/nginx/conf.d/default.conf
 
 # Copia los archivos estáticos
-COPY index.html /usr/share/nginx/html/
-COPY app.js /usr/share/nginx/html/
+COPY src/ndex.html /usr/share/nginx/html/
+COPY src/app.js /usr/share/nginx/html/
 
 # Expone el puerto 80
 EXPOSE 80
