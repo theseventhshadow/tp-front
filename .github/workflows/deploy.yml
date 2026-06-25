@@ -3,10 +3,10 @@ name: Deploy Frontend to EKS
 on:
   push:
     branches: [ main ]
-    paths:
-      - 'src/**'
-      - 'Dockerfile'
-      - 'k8s/**'
+   # paths:
+    #  - 'src/**'
+     # - 'Dockerfile'
+      #- 'k8s/**'
 
 env:
   AWS_REGION: us-east-1
