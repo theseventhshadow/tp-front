@@ -5,7 +5,7 @@ FROM nginx:alpine
 COPY src/default.conf /etc/nginx/conf.d/default.conf
 
 # Copia los archivos estáticos
-COPY src/ndex.html /usr/share/nginx/html/
+COPY src/index.html /usr/share/nginx/html/
 COPY src/app.js /usr/share/nginx/html/
 
 # Expone el puerto 80
